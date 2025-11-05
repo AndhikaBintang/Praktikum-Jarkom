@@ -1,0 +1,16 @@
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.Form1.resources
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.csproj.GenerateResource.cache
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.AssemblyInfoInputs.cache
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.AssemblyInfo.cs
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.csproj.CoreCompileInputs.cache
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\bin\Debug\net8.0-windows\WinFormsGameClient.exe
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\bin\Debug\net8.0-windows\WinFormsGameClient.deps.json
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\bin\Debug\net8.0-windows\WinFormsGameClient.runtimeconfig.json
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\bin\Debug\net8.0-windows\WinFormsGameClient.dll
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\bin\Debug\net8.0-windows\WinFormsGameClient.pdb
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.dll
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\refint\WinFormsGameClient.dll
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.pdb
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\WinFormsGameClient.genruntimeconfig.cache
+C:\Users\Tulalit\source\repos\WinFormsGameClient\WinFormsGameClient\obj\Debug\net8.0-windows\ref\WinFormsGameClient.dll

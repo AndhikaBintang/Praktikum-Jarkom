@@ -1,0 +1,6 @@
+@WebAPI___Toriq_Mardlatillah_HostAddress = http://localhost:5226
+
+GET {{WebAPI___Toriq_Mardlatillah_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
