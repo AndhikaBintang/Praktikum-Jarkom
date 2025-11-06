@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using WinFormsGameClient.Models;
 using WinFormsGameClient.Services;
 
@@ -8,17 +8,46 @@ namespace WinFormsGameClient
     {
         private readonly ScoreApiClient _api = new ScoreApiClient();
         private int _score = 0;
-        private int _timeLeft = 10; // detik
         private bool _gameRunning = false;
+        private readonly Random rng = new Random();
+
+        // Reaction system fields
+        private bool canPress = false;
+        private DateTime cueTime;
+        private System.Windows.Forms.Timer cueTimer;
+        private System.Windows.Forms.Timer reactionTimer;
+
+        // Konfigurasi reaction
+        private int minDelayMs = 1500;
+        private int maxDelayMs = 4000;
+        private int maxReactionMs = 1500; // jika lebih lambat dari ini -> gagal
 
         public Form1()
         {
             InitializeComponent();
+
             btnClick.Enabled = false;
             btnSubmit.Enabled = false;
             lblScore.Text = "Score: 0";
-            lblTime.Text = "Time: 10s";
-            numTop.Value = 10;
+            lblTime.Text = "Reaction Test Mode";
+
+            // --- inisialisasi timers untuk reaction ---
+            cueTimer = new System.Windows.Forms.Timer();
+            cueTimer.Tick += CueTimer_Tick;
+
+            reactionTimer = new System.Windows.Forms.Timer();
+            reactionTimer.Tick += ReactionTimer_Tick;
+
+            // Key preview agar form bisa menangkap tombol Space
+            this.KeyPreview = true;
+            this.KeyDown += Form1_KeyDown;
+
+            // Label cue awal
+            if (lblCue != null)
+            {
+                lblCue.Text = "Tekan Start untuk memulai tes reaksi!";
+                lblCue.ForeColor = Color.White;
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -30,20 +59,112 @@ namespace WinFormsGameClient
             }
 
             _score = 0;
-            _timeLeft = 10;
             _gameRunning = true;
-            btnClick.Enabled = true;
+            btnClick.Enabled = false; // tidak digunakan langsung
             btnSubmit.Enabled = false;
+
             lblScore.Text = "Score: 0";
-            lblTime.Text = $"Time: {_timeLeft}s";
-            gameTimer.Start();
+            lblCue.Text = "Bersiap...";
+            lblCue.ForeColor = Color.Yellow;
+
+            StartReactionRound();
         }
 
-        private void btnClick_Click(object sender, EventArgs e)
+        // =========================
+        // 🔹 Reaction System Logic
+        // =========================
+
+        private void StartReactionRound()
+        {
+            canPress = false;
+
+            int delay = rng.Next(minDelayMs, maxDelayMs + 1);
+            cueTimer.Interval = delay;
+            cueTimer.Start();
+        }
+
+        private void CueTimer_Tick(object? sender, EventArgs e)
+        {
+            cueTimer.Stop();
+
+            if (!_gameRunning) return;
+
+            lblCue.Text = "TEKAN SPASI SEKARANG!";
+            lblCue.ForeColor = Color.Lime;
+            canPress = true;
+            cueTime = DateTime.Now;
+
+            reactionTimer.Interval = maxReactionMs;
+            reactionTimer.Start();
+        }
+
+        private void ReactionTimer_Tick(object? sender, EventArgs e)
+        {
+            reactionTimer.Stop();
+
+            if (!_gameRunning) return;
+
+            if (canPress)
+            {
+                canPress = false;
+                lblCue.Text = "Terlambat!";
+                lblCue.ForeColor = Color.Red;
+                EndReactionTest();
+            }
+        }
+
+        private void Form1_KeyDown(object? sender, KeyEventArgs e)
         {
             if (!_gameRunning) return;
-            _score++;
-            lblScore.Text = $"Score: {_score}";
+
+            if (e.KeyCode == Keys.Space)
+            {
+                if (!canPress)
+                {
+                    // terlalu cepat
+                    lblCue.Text = "Terlalu cepat!";
+                    lblCue.ForeColor = Color.OrangeRed;
+                    EndReactionTest();
+                }
+                else
+                {
+                    canPress = false;
+                    reactionTimer.Stop();
+
+                    double reactionMs = (DateTime.Now - cueTime).TotalMilliseconds;
+
+                    // Skor berdasarkan kecepatan reaksi
+                    // Jika 0ms (instan) → 1000 poin
+                    // Jika 1000ms → 0 poin
+                    _score = Math.Max(0, 1000 - (int)reactionMs);
+
+                    lblCue.Text = $"Reaksi: {reactionMs:F0} ms\nSkor: {_score}";
+                    lblCue.ForeColor = Color.Cyan;
+
+                    // Simulasi mekanik klik lama agar kompatibel
+                    try
+                    {
+                        btnClick?.PerformClick();
+                    }
+                    catch { }
+
+                    EndReactionTest();
+                }
+            }
+        }
+
+        private void EndReactionTest()
+        {
+            _gameRunning = false;
+            canPress = false;
+
+            cueTimer.Stop();
+            reactionTimer.Stop();
+
+            btnClick.Enabled = false;
+            btnSubmit.Enabled = true;
+
+            MessageBox.Show($"Tes selesai!\nSkor kamu: {_score}", "Hasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private async void btnSubmit_Click(object sender, EventArgs e)
@@ -58,7 +179,7 @@ namespace WinFormsGameClient
             catch (Exception ex)
             {
                 MessageBox.Show($"Gagal submit skor: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                btnSubmit.Enabled = true; // biar bisa coba lagi
+                btnSubmit.Enabled = true;
             }
         }
 
@@ -84,21 +205,6 @@ namespace WinFormsGameClient
             catch (Exception ex)
             {
                 MessageBox.Show($"Gagal mengambil leaderboard: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void gameTimer_Tick(object sender, EventArgs e)
-        {
-            _timeLeft--;
-            lblTime.Text = $"Time: {_timeLeft}s";
-
-            if (_timeLeft <= 0)
-            {
-                gameTimer.Stop();
-                _gameRunning = false;
-                btnClick.Enabled = false;
-                btnSubmit.Enabled = true; // boleh submit
-                MessageBox.Show($"Waktu habis! Skor kamu: {_score}", "Selesai", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

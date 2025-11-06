@@ -31,15 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GAmeAPI - Kelompok 7",
+              "Title": "GAmeAPI - Kelompok 7.csproj",
               "DocumentMoniker": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
               "RelativeDocumentMoniker": "WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
               "ToolTip": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
               "RelativeToolTip": "WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-05T19:09:54.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T19:09:54.292Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "WebAPI - Kelompok 7\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-05T19:06:05.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T19:06:05.399Z"
             },
             {
               "$type": "Document",
@@ -64,8 +62,7 @@
               "RelativeToolTip": "WebAPI - Kelompok 7\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T19:05:56.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T19:05:56.642Z"
             },
             {
               "$type": "Document",
