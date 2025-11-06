@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|d:\\github\\praktikumjarkom\\praktikum-jarkom\\api\\gameapi\\webapi - kelompok 7\\playerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|solutionrelative:webapi - kelompok 7\\playerscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|d:\\github\\praktikumjarkom\\praktikum-jarkom\\api\\gameapi\\webapi - kelompok 7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|solutionrelative:webapi - kelompok 7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|d:\\github\\praktikumjarkom\\praktikum-jarkom\\api\\gameapi\\webapi - kelompok 7\\gameapi - kelompok 7.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|solutionrelative:webapi - kelompok 7\\gameapi - kelompok 7.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|d:\\github\\praktikumjarkom\\praktikum-jarkom\\api\\gameapi\\webapi - kelompok 7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{678515F8-7AF9-4D73-A575-25C770B9B67B}|WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj|solutionrelative:webapi - kelompok 7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GAmeAPI - Kelompok 7",
+              "DocumentMoniker": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
+              "RelativeDocumentMoniker": "WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
+              "ToolTip": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
+              "RelativeToolTip": "WebAPI - Kelompok 7\\GAmeAPI - Kelompok 7.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T19:09:54.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI - Kelompok 7\\appsettings.json",
+              "ToolTip": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\appsettings.json",
+              "RelativeToolTip": "WebAPI - Kelompok 7\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-05T19:06:05.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI - Kelompok 7\\Program.cs",
+              "ToolTip": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\Program.cs",
+              "RelativeToolTip": "WebAPI - Kelompok 7\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T19:05:56.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerScore.cs",
+              "DocumentMoniker": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\PlayerScore.cs",
+              "RelativeDocumentMoniker": "WebAPI - Kelompok 7\\PlayerScore.cs",
+              "ToolTip": "D:\\Github\\PraktikumJarkom\\Praktikum-Jarkom\\API\\GameAPI\\WebAPI - Kelompok 7\\PlayerScore.cs",
+              "RelativeToolTip": "WebAPI - Kelompok 7\\PlayerScore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T19:05:49.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

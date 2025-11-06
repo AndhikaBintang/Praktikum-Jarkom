@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsGameClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93db115813e377a4559e20562f232218fb067a08")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsGameClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsGameClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
